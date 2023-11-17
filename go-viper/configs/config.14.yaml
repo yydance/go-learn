@@ -1,0 +1,28 @@
+server:
+  host: 0.0.0.0
+  port: 9090
+log:
+  level: debug
+  format: json
+  logFile: "/data/logs/demo.log"
+  maxSize: 100
+  maxBackups: 7
+  maxAge: 7
+  compress: true
+
+mysql:
+  master:
+    host: master14
+    port: 3306
+    username: muser14
+    password: mpassword14
+    database: mdb14
+
+  slave:
+    host: slave14
+    port: 3306
+    username: suser
+    password: spassword14
+    database: sdb14
+
+
